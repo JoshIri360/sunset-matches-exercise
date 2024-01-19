@@ -64,7 +64,7 @@ const _recommendations = [
     like: true,
   },
   {
-    locationName: "Gotham Bar & Grill",
+    locationName: "Gotham",
     image: gotham,
     like: true,
   },
@@ -129,7 +129,7 @@ const index = () => {
                     if (
                       recommendation.locationName
                         .toLowerCase()
-                        .startsWith(text.toLowerCase())
+                        .includes(text.toLowerCase())
                     ) {
                       return recommendation;
                     }

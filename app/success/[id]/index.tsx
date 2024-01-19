@@ -25,7 +25,7 @@ const restaurants = [
     like: true,
   },
   {
-    locationName: "Gotham Bar & Grill",
+    locationName: "Gotham",
     image: gotham,
     like: true,
   },
@@ -57,7 +57,7 @@ const index = () => {
 
   return (
     <SafeAreaView className="bg-[#ec8dd169] w-screen h-screen p-5 relative flex items-center justify-center">
-      <Link href="/locations/" asChild>
+      <Link href="/" asChild>
         <Pressable className="absolute left-5 top-5 bg-white w-10 h-10 rounded-full flex items-center justify-center">
           <ChevronLeft size={20} color="#000000" strokeWidth={3} />
         </Pressable>
