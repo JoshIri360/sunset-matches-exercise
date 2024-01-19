@@ -1,4 +1,11 @@
-import { View, Text, Touchable, Pressable, Image } from "react-native";
+import {
+  View,
+  Text,
+  Touchable,
+  Pressable,
+  Image,
+  SafeAreaView,
+} from "react-native";
 import React from "react";
 import { MapPinned, MessageCircleHeart, X } from "lucide-react-native";
 import { ImageSourcePropType } from "react-native";
@@ -15,7 +22,7 @@ const data: Data = {
 
 const index = () => {
   return (
-    <View className="bg-[#ec8dd169] w-screen h-screen p-5 relative flex items-center justify-center">
+    <SafeAreaView className="bg-[#ec8dd169] w-screen h-screen p-5 relative flex items-center justify-center">
       <Pressable className="bg-white absolute left-5 top-5 w-10 h-10 rounded-full flex items-center justify-center">
         <X size={20} color="#000000" strokeWidth={3} />
       </Pressable>
@@ -54,7 +61,7 @@ const index = () => {
             <Text>Proceed to chat</Text>
           </View>
           <View className="flex justify-center items-center gap-3">
-            <Link href="/locations" asChild>
+            <Link href="/locations/" asChild>
               <Pressable className="bg-white w-14 h-14 rounded-full flex items-center justify-center">
                 <MapPinned size={25} color="#000000" strokeWidth={2} />
               </Pressable>
@@ -63,7 +70,7 @@ const index = () => {
           </View>
         </View>
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 
