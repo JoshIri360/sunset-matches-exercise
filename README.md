@@ -1,4 +1,4 @@
-# Venue Match Feature Development Readme
+# Venue Match Feature Development
 ![sunset matches](https://github.com/JoshIri360/sunset-matches-exercise/assets/91752742/a11ecdca-ce09-4dcd-8f90-a06e2ac36af0)
 
 
